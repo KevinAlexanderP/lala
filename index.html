@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+  <h2>Getters and setters</h2>
+  <body>
+    <div id="app"><%= mark.callBMI()%></div>
+
+    <script>
+      let mark = {
+        fullname: "Mark",
+        mass: 65,
+        heigth: 170,
+        callBMI: function () {
+          this.bmi = this.mass / (this.heigth * this.heigth);
+          return this.bmi;
+        }
+      };
+
+      console.log(mark.callBMI());
+    </script>
+  </body>
+</html>
